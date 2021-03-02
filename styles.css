@@ -1,0 +1,175 @@
+
+/* Globals */
+:root{
+
+    /* Colors */
+
+    /* Primary */
+    --cyan: hsl(179, 62%, 43%);
+    --brightYellow: hsl(71, 73%, 54%);
+
+    /* Neutral */
+    --lightGray: hsl(204, 43%, 93%);
+    --grayishBlue: hsl(218, 22%, 67%);
+
+}
+a{
+    text-decoration: none;    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: var(--lightGray);
+    padding: 5em 0;
+}
+
+/* Card */
+.card{
+    width: 312px;
+    margin: auto;
+}
+.card-section{
+    padding: 1.5em;
+}
+
+.card-join{
+    background-color: white;    
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.card-join-title{
+    color: var(--cyan);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.card-join-guarantee{
+    margin-top: 1em;
+    font-size: .95em;
+    color: var(--brightYellow);
+    text-shadow: var(--brightYellow ) 1px 0 1px;
+}
+.card-join-description{
+    margin-top: 1em;
+    font-size: .85em;
+    line-height: 1.8;
+    color: var(--grayishBlue);
+}
+/* Card subscription */
+.card-subscription{
+    background-color: var(--cyan);
+    color: white;
+}
+.card-subscription-title{
+    font-size: 1.2em;
+}
+.card-subscription-price{
+    margin-top: 1em;
+    color: var(--lightGray);
+    font-size: .9em;
+    font-weight: 400;    
+}
+.card-subscription-total-price{
+    font-weight: bold;
+    font-size: 2.3em;
+    color: white;
+    vertical-align:middle;
+}
+.card-subscription-access{
+    margin-top: .7em;
+    font-size: .93em;
+
+}
+.button-sign-up{
+    display: block;
+    width: 100%;
+    padding: 1em;
+    background-color: var(--brightYellow);
+    text-align: center;
+    margin-top: 2em;
+    font-size: 1em;
+    border-radius: 5px;
+    color: white;
+    -webkit-box-shadow: 0px 14px 39px -18px rgba(0,0,0,0.74);
+    -moz-box-shadow: 0px 14px 39px -18px rgba(0,0,0,0.74);
+    box-shadow: 0px 14px 39px -18px rgba(0,0,0,0.74);
+}
+
+/* Card why us */
+.card-why{
+    background-color: var(--cyan);
+    opacity: .8;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.card-why-title{
+    color: white;
+    font-size: 1.2em;
+}
+
+.card-why-links{
+    margin-top: 1.2em;
+}
+.card-why-links a{
+    display: block;
+    font-size: .85em;
+    color: white;
+    font-weight: lighter;
+    opacity: .7;
+    margin-bottom: .3em;
+}
+/* Media querys */
+@media screen and (width: 1440px){
+        
+    .card{
+        width: 636px;
+        height: 480px;
+        display: grid;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        -webkit-box-shadow: 0px 0px 45px -33px rgba(0,0,0,0.44);
+        -moz-box-shadow: 0px 0px 45px -33px rgba(0,0,0,0.44);
+        box-shadow: 0px 0px 45px -33px rgba(0,0,0,0.44);
+    }
+    .card-section{
+        padding: 2.5em;
+    }
+    .card-wrapper-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    /* Card join */
+    .card-join{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .card-join-title{
+        font-size: 1.5em;
+    }
+    .card-join-guarantee{
+        font-size: 1.18em;
+        margin-top: 1em;
+    }
+    .card-join-description{
+        margin-top: .9em;
+        font-size: 1em;
+    }
+    /* Card why us  */
+    .card-why{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    /* Card subscription  */
+    .card-subscription{
+        border-bottom-left-radius: 10px;
+    }
+
+}
